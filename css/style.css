@@ -1,0 +1,583 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-image: url(../img/Background-image-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: .8;
+    height: auto;
+}
+
+/* Header Menu */
+
+header{
+    background-image: url(../img/fundo-preto-com-textura-de-fibra-de-carbono_1017-33436.avif);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.logo{
+    width: 125px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hamb{
+    width: 50px;
+    height: auto;
+    display: none;
+}
+
+.menu-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.menu-navbar a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: 1s;
+}
+
+.menu-navbar a:hover{
+    color: #E70112;
+    border-bottom: 5px solid #E70112;
+    padding-bottom: 26.2px;
+}
+
+/* Section Personagens */
+
+.personagem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-bottom: 2px solid #ffff;
+    padding-bottom: 5rem;
+    gap: 30px;
+}
+
+.personagem:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.personagem:last-child{
+    border-bottom: none;
+}
+
+.personagem__image{
+    width: 496px;
+}
+
+.personagem__img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.personagem__text{
+    width: 496px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffff;
+}
+
+.personagem__title{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.personagem__paragraph{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.8rem;
+    line-height: 32px;
+}
+
+.personagem__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E70112;
+    border-radius: 50px;
+    width: 80%;
+    height: 49px;
+    /* box-shadow: -5px 8px 10px rgba(255, 255, 255, 0.384); */
+}
+
+.personagem__btn:hover{
+    background-color: transparent;
+    border: 2px solid #E70112;
+}
+
+.personagem__text a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Games */
+
+.mario-games{
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    border-bottom: 2px solid #ffff;
+    margin-bottom: 4rem;
+}
+
+.mario-games__vdo{
+    width: 900px;
+    height: 500px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.mario-games__text{
+    color: #ffffff;
+    width: 900px;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mario-games__title{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.mario-games__paragraph{
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1.8rem;
+        line-height: 32px;
+}
+
+.games-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E70112;
+    border-radius: 50px;
+    width: 50%;
+    height: 49px;
+    margin-bottom: 8rem;
+}
+
+.games-btn:hover{
+    background-color: transparent;
+    border: 2px solid #E70112;
+}
+
+.games-btn a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formulario de Pesquisa */
+
+.form-content{
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+
+.form-content__title{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5rem;
+    margin-bottom: 0.2rem;
+}
+
+.form-content__paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.form-content__buscar{
+    text-align: center;
+    width: 100%;
+}
+
+.pesquisar{
+    width: 80%;
+    height: 45px;
+    margin-bottom: 2.8rem;
+}
+
+.fa-magnifying-glass{
+    font-size: 1.4rem;
+}
+
+.form-content__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border-radius: 50px;
+    width: 50%;
+    height: 49px;
+}
+
+
+.form-content__btn a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-content__btn:hover{
+    background-color: transparent;
+    border: 2px solid #008000;
+}
+/* Footer */
+
+footer{
+    background-image: url(../img/fundo-preto-com-textura-de-fibra-de-carbono_1017-33436.avif);
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 2.3rem 0;
+}
+
+.footer-img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer-container__title{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer-container__paragraph{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 60%;
+    margin: 2rem 0;
+}
+
+.footer-menu .fa-brands{
+    font-size: 1.8rem;
+    color: #ffff;
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 768px) {
+    .personagem{
+        flex-wrap: wrap;
+    }
+
+    .mario-games__vdo{
+        width: 90%;
+        height: auto;
+    }
+
+    .mario-games__vdo iframe{
+        width: 100%;
+        height: 350px;
+    }
+
+    .mario-games__text{
+        width: 90%;
+    }
+
+    .form-content__title{
+        font-size: 4rem;
+    }
+
+    .form-content__paragraph{
+        text-align: center;
+        margin: 1.5rem 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 580px){
+    :root{
+        font-size: 16px;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 70px;
+        margin-left: 3rem;
+
+    }    
+
+    .menu-hamb{
+        display: inline-block;
+        margin-right: 3rem;
+        width: 40px;
+    }
+
+    .menu-navbar{
+        display: none;
+    }
+
+    .personagem{
+        margin: 0 auto;
+        text-align: center;
+        margin: 0 2rem;
+        flex-direction: column;
+    }
+
+    .personagem:nth-child(even){
+        flex-direction: column;
+    }
+
+    .personagem__image{
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .personagem__image img{
+        width: 50%;
+    }
+
+    .personagem__text{
+        width: 80%;
+    }
+
+    .personagem__btn{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    /* Games */
+
+    .mario-games{
+        margin: 0 auto;
+        text-align: center;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .mario-games__title{
+        margin: 3rem 0;
+    }
+
+    .mario-games__paragraph{
+        text-align: center;
+    }
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mario-games__vdo{
+        width: 90%;
+        height: 300px;
+    }
+
+    .mario-games__vdo iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mario-games__text{
+        width: 90%;
+    }
+
+    .games-btn{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    .form-content{
+        width: 90%;
+    }
+
+    .form-content__title{
+        font-size: 4rem;
+        margin: 2.5rem 0;
+    }
+
+    .form-content__paragraph{
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .form-content__btn{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    .fa-magnifying-glass{
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
+    .footer-container__paragraph{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 579px) and (min-width: 320px) {
+    :root{
+        font-size: 8px;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 70px;
+        margin-left: 3rem;
+
+    }    
+
+    .menu-navbar{
+        display: none;
+    }
+
+    .menu-hamb{
+        display: inline-block;
+        margin-right: 3rem;
+        width: 40px;
+    }
+
+    .personagem{
+        flex-wrap: wrap;
+    }
+
+    .personagem__image{
+        width: 80%;
+    }
+
+    .personagem__text{
+        width: 80%;
+        text-align: center;
+    }
+
+    .personagem__btn{
+        font-size: 1.5rem;
+        width: 80%;
+        height: 40px;
+    }
+
+    
+    .mario-games__vdo{
+        width: 90%;
+        height: auto;
+    }
+
+    .mario-games__text{
+        text-align: center;
+        width: 80%;
+    }
+    
+    .games-btn{
+        width: 80%;
+    }
+    
+    .footer-container__img img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .form-content__paragraph{
+        margin: 1.8rem 0;
+        text-align: center;
+    }
+
+    .footer-container__paragraph{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
