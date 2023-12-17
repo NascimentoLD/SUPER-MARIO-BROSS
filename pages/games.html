@@ -13,17 +13,21 @@
 
 <body>
     <header>
-        <a href="../index.html">
-            <img class="logo" src="../img/Mario_Series_Logo.svg.png" alt="">
+        <a href="index.html">
+            <img class="logo" src="img/Mario_Series_Logo.svg.png" alt="">
         </a>
-        <nav>
-            <ul class="menu menu-navbar">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./pages/games.html">Games</a></li>
-                <li><a href="https://github.com/NascimentoLD" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+        <nav class="menu">
+            <label class="menu__logo" for="hamb-menu">
+                &#9776
+            </label>
+            <input type="checkbox" id="hamb-menu">
+            <ul class="menu__itens menu-navbar">
+                <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="./pages/games.html">Games</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://github.com/NascimentoLD" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#"><i class="fa-solid fa-gear"></i></a></li>
             </ul>
-            <img class="menu-hamb" src="../img/logo.png" alt="">
         </nav>
     </header>
 
