@@ -53,6 +53,11 @@ header{
     justify-content: center;
 }
 
+.menu__logo,
+.menu input{
+    display: none;
+}
+
 .menu-hamb{
     width: 50px;
     height: auto;
@@ -79,7 +84,6 @@ header{
 .menu-navbar a:hover{
     color: #E70112;
     border-bottom: 5px solid #E70112;
-    padding-bottom: 26.2px;
 }
 
 /* Section Personagens */
@@ -394,17 +398,56 @@ footer{
     .logo{
         width: 70px;
         margin-left: 3rem;
+    }
 
-    }    
+    .menu__logo{
+        color: #ffff;
+    }
 
-    .menu-hamb{
-        display: inline-block;
-        margin-right: 3rem;
-        width: 40px;
+    .menu__itens{
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu__link {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .menu__logo {
+        display: block;
+        color:#fff;
+        font-size: 3rem;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .menu input:checked~.menu__itens{
+        display: block;
+        position: absolute;
+        padding: 30px;
+        text-align: center;
+        right: 0;
+        top: 90px;
+        background-color: #0000006e;
+        width: 100vw;
     }
 
     .menu-navbar{
         display: none;
+    }
+
+    .menu-navbar a{
+        font-size: 2rem
+    }
+
+    .menu-navbar a:hover{
+        padding: 0;
+        margin: 0;
+        border: none;
     }
 
     .personagem{
@@ -519,17 +562,56 @@ footer{
     .logo{
         width: 70px;
         margin-left: 3rem;
-
     }    
+
+    .menu__logo{
+        color: #ffff;
+    }
+
+    .menu__itens{
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu__link {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .menu__logo {
+        display: block;
+        color:#fff;
+        font-size: 3rem;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .menu input:checked~.menu__itens{
+        display: block;
+        position: absolute;
+        padding: 30px;
+        text-align: center;
+        right: 0;
+        top: 90px;
+        background-color: #0000006e;
+        width: 100vw;
+    }
 
     .menu-navbar{
         display: none;
     }
 
-    .menu-hamb{
-        display: inline-block;
-        margin-right: 3rem;
-        width: 40px;
+    .menu-navbar a{
+        font-size: 2rem
+    }
+
+    .menu-navbar a:hover{
+        padding: 0;
+        margin: 0;
+        border: none;
     }
 
     .personagem{
