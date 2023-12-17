@@ -150,7 +150,6 @@ header{
     border-radius: 50px;
     width: 80%;
     height: 49px;
-    /* box-shadow: -5px 8px 10px rgba(255, 255, 255, 0.384); */
 }
 
 .personagem__btn:hover{
@@ -381,7 +380,6 @@ footer{
     .form-content__paragraph{
         text-align: center;
         margin: 1.5rem 0;
-
     }
 }
 
@@ -429,10 +427,9 @@ footer{
         display: block;
         position: absolute;
         padding: 30px;
-        text-align: center;
         right: 0;
         top: 90px;
-        background-color: #0000006e;
+        background-color: #000000d8;
         width: 100vw;
     }
 
@@ -502,7 +499,7 @@ footer{
 
     .mario-games__vdo{
         width: 90%;
-        height: 300px;
+        height: 450px;
     }
 
     .mario-games__vdo iframe{
@@ -593,10 +590,9 @@ footer{
         display: block;
         position: absolute;
         padding: 30px;
-        text-align: center;
         right: 0;
         top: 90px;
-        background-color: #0000006e;
+        background-color: #000000d8;
         width: 100vw;
     }
 
@@ -636,7 +632,7 @@ footer{
     
     .mario-games__vdo{
         width: 90%;
-        height: auto;
+        height: 450px;
     }
 
     .mario-games__text{
